@@ -15,6 +15,6 @@ import { ClienteCreateComponent } from './cliente-create/cliente-create.componen
   ],
   declarations: [ClienteListComponent, ClienteDetailComponent, ClienteCreateComponent],
   providers: [ClienteService],
-  exports: [ClienteListComponent]
+  exports: [ClienteListComponent, ClienteDetailComponent, ClienteCreateComponent]
 })
 export class ClienteModule { }
