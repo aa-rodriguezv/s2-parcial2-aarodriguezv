@@ -6,6 +6,7 @@ import {Cliente} from './cliente';
 
 const API_URL = '../../assets/';
 const clientes = 'data.json';
+const cliente = 'cliente-';
 
 @Injectable()
 export class ClienteService {
@@ -16,6 +17,11 @@ export class ClienteService {
   getClientes(): Observable<Cliente[]>
   {
     return this.http.get<Cliente[]>(API_URL +  clientes);
+  }
+
+  getClientePorId(clienteID: number): Observable<Cliente>
+  {
+    return this.http.get<Cliente>(API_URL + cliente + clienteID + '.json');
   }
 
 }
