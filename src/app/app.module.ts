@@ -6,8 +6,7 @@ import {ClienteModule} from './cliente/cliente.module';
 import {AppRoutingModule} from './app-routing/app-routing.module';
 
 import { AppComponent } from './app.component';
-import {HttpClientModule} from '@angular/common/http'
-
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   imports:      [ BrowserModule, 
