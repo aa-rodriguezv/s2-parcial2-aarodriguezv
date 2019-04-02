@@ -18,11 +18,28 @@ export class Cliente {
    * 
    */
   city: string;
-
+  /**
+   * 
+   */
   num1: number;
 
+  /**
+   * 
+   */
   num2: number;
 
+  /**
+   * 
+   */
+  multiplicacion()
+  {
+    return this.num1 * this.num2;
+  }
+
+  /**
+   * 
+   */
+  ventas = this.multiplicacion();
 
 
 }
