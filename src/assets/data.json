@@ -1,0 +1,31 @@
+[{
+  "id": 1,
+  "name": "Juan Guerra",
+  "address": "Calle 100 20-30",
+  "city":"Bogotá",
+  "num1": 4,
+  "num2": 50
+}, {
+  "id": 2,
+  "name": "Pablo Picasso",
+  "address": "Av 7 20-30",
+  "city":"Cartagena",
+  "num1": 3,
+  "num2": 5
+},
+{
+  "id": 3,
+  "name": "Pedro Paramo",
+  "address": "Calle 45 20-30",
+  "city":"Cali",
+  "num1": 2,
+  "num2": 15
+},
+{
+  "id": 4,
+  "name": "Macrol Diaz",
+  "address": "Diag 10 1-30",
+  "city":"Bogotá",
+  "num1": 4,
+  "num2": 25
+}]

@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="col-md-2">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Id</th>    
+                    <th>Nombre</th> 
+                    <th>Direccion</th> 
+                    <th>Ciudad</th>  
+                    <th>Multiplicacion</th>  
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let cliente of clientes">
+                    <td>{{cliente.id}}</td>
+                    <td> {{cliente.name}}</td>
+                    <td>{{cliente.address}}</td>
+                    <td>{{cliente.city}}</td>
+                    <td>{{cliente.num1*cliente.num2}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

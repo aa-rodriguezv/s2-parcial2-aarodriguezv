@@ -1,0 +1,30 @@
+Primero que todo
+----------------
+
+1. Ingrese a su cuenta de stackblitz
+2. Haga fork del link del proyecto que se le entregó
+3. Cambie el nombre del proyecto (arriba a la izquierda). Deje la parte "s2-parcial2-" y agregue su login (sin puntos). SALVE EN EL SIMBOLO DEL LAPIZ JUNTO AL NOMBRE
+4. Salve su proyecto. 
+5. Vaya  a DEPENDENCIES en la parte de abajo de los archivos del proyecto y donde dice "enter package name" escriba bootstrap.
+
+NOTA: Durante el desarrollo de su código no olvide ir salvando. 
+
+
+Pasos para desarrollar el parcial
+-------------------------------
+
+1. Cree el módulo "clientes" que contendrá el componente de listar clientes, la clase Cliente según los datos que contiene el json que se encuentra en "assets/data.json" y un servicio donde implemente un método utilizando http para obtener los objetos que están definidos en el archivo.
+
+
+2. . Cree el template del componente listar para hacer la primera parte del despliegue de la lista utilizando el selector del componente listar clientes (no olvidar salvar)
+
+3. Defina la segunda parte con el botón que al hacer clic despliega debajo la lista. Debe funcionar con "routerLink".
+   Para la segunda parte debe definir un módulo "módulo app-routing"  que debe importar de angular: 
+"import {RouterModule, Routes} from '@angular/router';"
+ 
+ Para entregar: 
+ -----------------
+ 1. Salve su proyecto 
+ 2. Vaya a share y copie el enlace de la opción EDITOR URL 
+ 3. Suba a sicua el enlace. }
+4. Posterior al parcial NO puede modificar este proyecto. 
