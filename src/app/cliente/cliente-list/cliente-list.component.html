@@ -12,7 +12,8 @@
             </thead>
             <tbody>
                 <tr *ngFor = "let cliente of clientes">
-                    <td>{{cliente.id}}</td>
+                    <td style = "cursor:pointer;">
+                      <dd class = "figure-caption" routerLink = "/clientes/{{cliente.id}}">{{cliente.id}}</td>
                     <td> {{cliente.name}}</td>
                     <td>{{cliente.address}}</td>
                     <td>{{cliente.city}}</td>
