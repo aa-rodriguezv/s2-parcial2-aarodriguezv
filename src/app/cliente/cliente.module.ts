@@ -8,6 +8,7 @@ import { ClienteCreateComponent } from './cliente-create/cliente-create.componen
 import {AppRoutingModule} from '../app-routing/app-routing.module';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserModule} from '@angular/platform-browser';
+import {ToastrModule} from 'ngx-toastr';
 @NgModule({
   imports: [
     CommonModule,
