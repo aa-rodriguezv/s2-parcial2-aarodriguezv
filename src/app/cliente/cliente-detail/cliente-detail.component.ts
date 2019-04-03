@@ -19,7 +19,7 @@ export class ClienteDetailComponent implements OnInit {
 
   getClienteDetail(): void
   {
-    this.clienteService.getClientePorId(this.cliente_id)
+    this.clienteService.getClientePorId(this.cliente_id).subscribe(clienteDetail =>{ this.cliente = clienteDetail});
   }
 
   ngOnInit() {
