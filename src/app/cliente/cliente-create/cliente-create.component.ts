@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
+import { ClienteService } from '../cliente.service';
 
 @Component({
   selector: 'app-cliente-create',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClienteCreateComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private clienteService: ClienteService,
+    private toastrService: ToastrService
+  ) { }
 
   ngOnInit() {
   }
