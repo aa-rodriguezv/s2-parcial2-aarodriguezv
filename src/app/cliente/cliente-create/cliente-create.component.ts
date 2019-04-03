@@ -35,7 +35,6 @@ export class ClienteCreateComponent implements OnInit {
    * 
    */
   createCliente(): Cliente{
-
     this.clienteService.postCliente(this.cliente)
     .subscribe((cliente) => {
       this.cliente = cliente;

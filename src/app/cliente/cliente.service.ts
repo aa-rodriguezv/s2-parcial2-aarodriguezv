@@ -24,9 +24,10 @@ export class ClienteService {
     return this.http.get<Cliente>(API_URL + cliente + clienteID + '.json');
   }
 
-  postCliente(cliente: Cliente): void
+  postCliente(cliente: Cliente): Observable<Cliente>
   {
     console.log(cliente);
+    return this.http.post<Cliente>(API_URL + 'test.json', cliente);
   }
 
 }
