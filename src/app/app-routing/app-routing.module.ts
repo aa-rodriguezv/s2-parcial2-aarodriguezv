@@ -4,8 +4,13 @@ import {RouterModule, Routes} from '@angular/router';
 import {ClienteListComponent} from './../cliente/cliente-list/cliente-list.component';
 
 const routes: Routes = [{
-  path: '/clientes',
-  component: ClienteListComponent
+  path: 'clientes',
+  children: [
+    {
+      path: 'list',
+      component: ClienteListComponent
+    }
+  ]
 }
 ]
 
