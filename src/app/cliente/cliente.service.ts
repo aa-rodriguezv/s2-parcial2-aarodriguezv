@@ -24,10 +24,9 @@ export class ClienteService {
     return this.http.get<Cliente>(API_URL + cliente + clienteID + '.json');
   }
 
-  createCliente(cliente): Observable<Cliente>
+  postCliente(cliente: Cliente): void
   {
     console.log(cliente);
-    return this.http.post<Cliente>(API_URL +  clientes, cliente);
   }
 
 }

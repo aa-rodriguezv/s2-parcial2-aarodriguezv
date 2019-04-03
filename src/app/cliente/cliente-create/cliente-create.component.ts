@@ -21,14 +21,22 @@ export class ClienteCreateComponent implements OnInit {
     this.cliente = new Cliente();
   }
 
+  /**
+   * 
+   */
   @Output() create = new EventEmitter();
 
+  /**
+   * 
+   */
   @Output() cancel = new EventEmitter();
 
-
+  /**
+   * 
+   */
   createCliente(): Cliente{
 
-    this.clienteService.createCliente(this.cliente)
+    this.clienteService.postCliente(this.cliente)
     .subscribe((cliente) => {
       this.cliente = cliente;
       this.create.emit();
@@ -36,6 +44,14 @@ export class ClienteCreateComponent implements OnInit {
     });
     return this.cliente;
   }
+  /**
+   * 
+   */
+  cancelCreation(): void{
+      this.cancel.emit();
+  }
+
+
 
 
 

@@ -16,9 +16,14 @@ const routes: Routes = [
     {
       path: ':id',
       component: ClienteDetailComponent
-    },
+    }
+  ]
+},
+{
+  path:'create',
+  children: [
     {
-      path: 'create',
+      path: 'cliente',
       component: ClienteCreateComponent
     }
   ]
