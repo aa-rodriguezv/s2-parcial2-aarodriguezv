@@ -6,7 +6,7 @@ import {Cliente} from './cliente';
 
 const API_URL = '../../assets/';
 const clientes = 'data.json';
-const cliente = 'cliente-';
+const cliente = 'data-';
 
 @Injectable()
 export class ClienteService {
