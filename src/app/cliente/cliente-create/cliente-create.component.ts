@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { ClienteService } from '../cliente.service';
 import { Cliente } from '../cliente';
@@ -18,7 +18,12 @@ export class ClienteCreateComponent implements OnInit {
   cliente: Cliente;
 
   ngOnInit() {
+    this.cliente = new Cliente();
   }
+
+  @Output() create = new EventEmitter();
+
+  @Output() cancel = new EventEmitter();
 
 
   createCliente(): Cliente{
