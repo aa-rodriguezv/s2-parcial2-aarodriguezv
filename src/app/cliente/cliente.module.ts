@@ -7,12 +7,14 @@ import { ClienteDetailComponent } from './cliente-detail/cliente-detail.componen
 import { ClienteCreateComponent } from './cliente-create/cliente-create.component';
 import {AppRoutingModule} from '../app-routing/app-routing.module';
 import {HttpClientModule} from '@angular/common/http';
+import {BrowserModule} from '@angular/platform-browser';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserModule
   ],
   declarations: [ClienteListComponent, ClienteDetailComponent, ClienteCreateComponent],
   providers: [ClienteService],

@@ -3,7 +3,7 @@ import {ClienteService} from '../cliente.service';
 import {Cliente} from  '../cliente';
 
 @Component({
-  selector: 'app-cliente-list',
+  selector: 'app-cliente',
   templateUrl: './cliente-list.component.html',
   styleUrls: ['./cliente-list.component.css']
 })
