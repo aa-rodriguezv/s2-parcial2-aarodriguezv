@@ -8,34 +8,26 @@
         <div class="form-group">
             <label for= "clienteId"><b>Id</b></label>
             <input  type = "number" name= "clienteId" class="form-control" id= "clienteId" [(ngModel)]= "cliente.id"
-            #clienteId = "ngModel" [ngClass] = "{ 'is-invalid': f.submitted && clienteId.invalid}" required  >
-            <div class="invalid-feedback">
-                        <div>El id es necesario</div>
-            </div>
+            #clienteId = "ngModel"  required  >
+            
         </div>
          <div class="form-group">
             <label for= "clienteName"><b>Nombre</b></label>
             <input type = "text" name= "clienteName" class="form-control" id= "clienteName" [(ngModel)]= "cliente.name"
-            #clienteName = "ngModel" [ngClass] = "{ 'is-invalid': f.submitted && clienteName.invalid}" required>
-            <div class="invalid-feedback">
-                        <div>El nombre del cliente esta faltando</div>
-            </div>
+            #clienteName = "ngModel"  required>
+            
          </div>
         <div class = "form-group">
           <label for="clienteCity"><b>Ciudad</b></label>
           <input type="text" name= "clienteCity" class= "form-control" id="clienteCity" [(ngModel)]= "cliente.city"
-          #clienteCity= "ngModel" [ngClass] = "{ 'is-invalid': f.submitted && clienteCity.invalid}" required>
-          <div class="invalid-feedback">
-             <div>La ciudad esta faltando</div>
-            </div>
+          #clienteCity= "ngModel" required>
+        
         </div>
         <div class = "form-group">
           <label for="clienteAddress"><b>Direccion de residencia</b></label>
           <input type="text" name= "clienteAddress" class= "form-control" id="clienteAddress" [(ngModel)]= "cliente.address"
-          #clienteCity= "ngModel" [ngClass] = "{ 'is-invalid': f.submitted && clienteAddress.invalid}" required>
-          <div class="invalid-feedback">
-             <div>La direccion esta faltando</div>
-            </div>
+          #clienteCity= "ngModel"  required>
+            
         </div>
         <div class="row form-inline justify-content-center align-self-center">
                 <button type="submit" class="btn btn-primary">Create</button>

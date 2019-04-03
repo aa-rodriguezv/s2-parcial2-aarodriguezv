@@ -36,11 +36,7 @@ export class ClienteCreateComponent implements OnInit {
    */
   createCliente(): Cliente{
     this.clienteService.postCliente(this.cliente)
-    .subscribe((cliente) => {
-      this.cliente = cliente;
-      this.create.emit();
-      this.toastrService.success("El cliente fue creado correctamente", "Añadir cliente");
-    });
+    this.create.emit();
     return this.cliente;
   }
   /**
