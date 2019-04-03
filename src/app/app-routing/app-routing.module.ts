@@ -12,6 +12,14 @@ const routes: Routes = [
     {
       path: 'list',
       component: ClienteListComponent
+    },
+    {
+      path: ':id',
+      component: ClienteDetailComponent
+    },
+    {
+      path: 'create',
+      component: ClienteCreateComponent
     }
   ]
 }
