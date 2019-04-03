@@ -2,15 +2,46 @@
   <div class= "col-3">
     <div class = "col-6">
       <br>
-      <h2 class="text-center"> Crear un Cliente</h2>
+      <h2 class="text-center"> Crear</h2>
       <br>
-      <form name="cliente" (ngSubmit)="f.form.valid && createAuthor()" #f="ngForm" novalidate>
+      <form name="cliente" (ngSubmit)="f.form.valid && createCliente()" #f="ngForm" novalidate>
+        <div class="form-group">
+            <label for= "clienteId"><b>Id</b></label>
+            <input  type = "number" name= "clienteId" class="form-control" id= "clienteId" [(ngModel)]= "cliente.id"
+            #clienteId = "ngModel" [ngClass] = "{ 'is-invalid': f.submitted && clienteId.invalid}" required  >
+            <div class="invalid-feedback">
+                        <div>El id es necesario</div>
+            </div>
+        </div>
          <div class="form-group">
-
-
-
-
+            <label for= "clienteName"><b>Nombre</b></label>
+            <input type = "text" name= "clienteName" class="form-control" id= "clienteName" [(ngModel)]= "cliente.name"
+            #clienteName = "ngModel" [ngClass] = "{ 'is-invalid': f.submitted && clienteName.invalid}" required>
+            <div class="invalid-feedback">
+                        <div>El nombre del cliente esta faltando</div>
+            </div>
          </div>
+        <div class = "form-group">
+          <label for="clienteCity"><b>Ciudad</b></label>
+          <input type="text" name= "clienteCity" class= "form-control" id="clienteCity" [(ngModel)]= "cliente.city"
+          #clienteCity= "ngModel" [ngClass] = "{ 'is-invalid': f.submitted && clienteCity.invalid}" required>
+          <div class="invalid-feedback">
+             <div>La ciudad esta faltando</div>
+            </div>
+        </div>
+        <div class = "form-group">
+          <label for="clienteAddress"><b>Direccion de residencia</b></label>
+          <input type="text" name= "clienteAddress" class= "form-control" id="clienteAddress" [(ngModel)]= "cliente.address"
+          #clienteCity= "ngModel" [ngClass] = "{ 'is-invalid': f.submitted && clienteAddress.invalid}" required>
+          <div class="invalid-feedback">
+             <div>La direccion esta faltando</div>
+            </div>
+        </div>
+        <div class="row form-inline justify-content-center align-self-center">
+                <button type="submit" class="btn btn-primary">Create</button>
+                <div class="divider"></div>
+                <button type="button" class="btn btn-danger" (click)="cancelCreation()">Cancel</button>
+            </div>
       </form>
     </div>
   </div>

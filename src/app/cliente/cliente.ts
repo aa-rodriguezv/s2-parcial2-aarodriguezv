@@ -28,17 +28,6 @@ export class Cliente {
    */
   num2: number;
 
-  /**
-   * 
-   */
-  
-  /**
-   * 
-   */
-  ventas = function multiplicacion():number
-  {
-    return (this.num1*this.num2);
-  }
 
 
 }
